@@ -1,0 +1,11 @@
+{
+  "name": "lightwork",
+  "version": "1.0.0",
+  "description": "Framework made light for easy to use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gjhuerte@gmail.com",
+  "license": "ISC"
+}
