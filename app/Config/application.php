@@ -6,8 +6,24 @@ use App\Extensions\Token\TokenGenerator;
 
 class Application
 {
-
 	const CHARSET = 'utf-8';
+
+	protected $_instance;
+
+	/**
+	 * Start the configuration for the 
+	 * application to use
+	 *
+	 * @return object
+	 */
+	public static function start()
+	{
+		if(self::$_instance === null) {
+			self::$_instance = new self;
+		}
+
+		return self::$_instance;
+	}
 
 	/**
 	 * Returns the charset value
@@ -38,4 +54,5 @@ class Application
 	 * @return string
 	 */
 	public function title() { }
+	
 }
