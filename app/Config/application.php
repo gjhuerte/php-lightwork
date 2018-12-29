@@ -8,24 +8,6 @@ class Application
 {
 	const CHARSET = 'utf-8';
 
-	protected $_instance;
-
-	/**
-	 * Start the configuration for the 
-	 * application to use
-	 *
-	 * @return object
-	 */
-	public static function load(array $classes)
-	{
-		
-		// trigger the register method on each class
-		// to load the needed resources on start up
-		foreach($classes as $class) {
-			$class::register();
-		}
-	}
-
 	/**
 	 * Returns the charset value
 	 * 
