@@ -2,9 +2,10 @@
 
 namespace App\Config;
 
-class Encryption
-{
+use App\Core\Loader\Loader;
 
+class Encryption implements Loader
+{
     /**
      * Encrypt the passed string argument
      *

@@ -2,4 +2,6 @@
 
 namespace App\Config;
 
-class Storage { }
+use App\Core\Loader\Loader;
+
+class Storage implements Loader { }

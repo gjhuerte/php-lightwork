@@ -2,4 +2,6 @@
 
 namespace App\Config;
 
-class Base { }
+use App\Core\Loader\Loader;
+
+class Base implements Loader { }

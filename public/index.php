@@ -6,4 +6,11 @@
 
 require_once '../vendor/autoload.php';
 
-App\Config\Application::start();
+App\Config\Bootstrap::load([
+    Base::class,
+    Form::class,
+    Application::class,
+    Setting::class,
+    View::class,
+    Database::class
+]);

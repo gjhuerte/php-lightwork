@@ -16,13 +16,14 @@ class Application
 	 *
 	 * @return object
 	 */
-	public static function start()
+	public static function load(array $classes)
 	{
-		if(self::$_instance === null) {
-			self::$_instance = new self;
+		
+		// trigger the register method on each class
+		// to load the needed resources on start up
+		foreach($classes as $class) {
+			$class::register();
 		}
-
-		return self::$_instance;
 	}
 
 	/**

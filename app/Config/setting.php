@@ -2,4 +2,6 @@
 
 namespace App\Config;
 
-class Setting { }
+use App\Core\Loader\Loader;
+
+class Setting implements Loader { }

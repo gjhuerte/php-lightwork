@@ -2,4 +2,6 @@
 
 namespace App\Config;
 
-class Bootstrap { }
+use App\Core\Loader\Loader;
+
+class Bootstrap implements Loader { }
