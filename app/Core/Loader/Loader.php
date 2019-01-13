@@ -10,5 +10,5 @@ interface Loader
      *
      * @return object
      */
-    public static function register();
+    public static function load(array $classes);
 }

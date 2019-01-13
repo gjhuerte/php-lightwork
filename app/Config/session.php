@@ -2,8 +2,8 @@
 
 namespace App\Config;
 
-use App\Core\Loader\Loader;
+use App\Core\Loader\Registry;
 use App\Extensions\Session\SessionWrapper;
 
-class Session extends SessionWrapper implements Loader { }
+class Session extends SessionWrapper { }
 

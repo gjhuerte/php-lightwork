@@ -2,18 +2,15 @@
 
 namespace App\Config;
 
-use App\Core\Loader\Loader;
+use App\Core\Loader\Registry;
 use App\Core\Protocols\Routing\RoutingProtocol;
 
-class Route implements Loader
+class Route implements Registry
 {
     /**
      * Triggers the required methods
      *
      * @return void
      */
-    public function register()
-    {
-
-    }
+    public static function register() { }
 }
